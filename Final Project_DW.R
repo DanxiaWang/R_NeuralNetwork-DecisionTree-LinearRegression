@@ -1,5 +1,5 @@
-setwd("G:/UMB/MSIS 672/Final Project")
-save.image("FinalProject_Group")
+setwd("MSIS 672/Final Project")
+save.image("FinalProject")
 
 ###########################################################################
 ## Import Libraries
@@ -469,7 +469,7 @@ head(TARGET_D)
 FutureFundraising.D.df$TARGET_D <- TARGET_D
 
 # Join TARGET_D to data
-FF <- left_join(FutureFundraising[,-24], FutureFundraising.D.df[,c(1,24)], by="ï..Row.Id")
+FF <- left_join(FutureFundraising[,-24], FutureFundraising.D.df[,c(1,24)], by="Ã¯..Row.Id")
 FF$TARGET_D <- ifelse(FutureFundraising$TARGET_B==0, 0, FF$TARGET_D)
 View(FF)
 
